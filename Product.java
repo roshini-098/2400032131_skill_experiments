@@ -3,11 +3,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.inventory</groupId>
-  <artifactId>hibernate-crud-product</artifactId>
+  <groupId>com.skill3</groupId>
+  <artifactId>HQL</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>hibernate-crud-product</name>
+  <name>HQL</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -29,30 +29,25 @@
   </dependencyManagement>
 
   <dependencies>
-  <!-- Source: https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-<dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>8.0.33</version>
-    <scope>compile</scope>
-</dependency>
+  
+  <dependency>
+   <groupId>org.hibernate.orm</groupId>
+   <artifactId>hibernate-core</artifactId>
+   <version>6.4.4.Final</version>
+  </dependency>
 
-<!-- Source: https://mvnrepository.com/artifact/jakarta.persistence/jakarta.persistence-api -->
-<dependency>
-    <groupId>jakarta.persistence</groupId>
-    <artifactId>jakarta.persistence-api</artifactId>
-    <version>3.1.0</version>
-    <scope>compile</scope>
-</dependency>
+  <dependency>
+   <groupId>com.mysql</groupId>
+   <artifactId>mysql-connector-j</artifactId>
+   <version>8.3.0</version>
+  </dependency>
 
-<!-- Hibernate -->
-    <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-core</artifactId>
-        <version>6.4.4.Final</version>
-    </dependency>
-
-
+  <dependency>
+   <groupId>jakarta.persistence</groupId>
+   <artifactId>jakarta.persistence-api</artifactId>
+   <version>3.1.0</version>
+  </dependency>
+  
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
@@ -63,6 +58,11 @@
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>com.example</groupId>
+    	<artifactId>ProductApplication</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
 

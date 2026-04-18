@@ -32,7 +32,7 @@ update
 true
 </property>
 
-<mapping class="com.inventory.hibernate_crud_product.Product"/>
+<mapping class="com.skill3.HQL.Product"/>
 
 </session-factory>
 
